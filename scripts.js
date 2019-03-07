@@ -1,10 +1,20 @@
-const firstParagraph = document.getElementsByTagName('p');
+let element;
 
-for (let i = 0; i < firstParagraph.length; i++) {
-    firstParagraph[i].innerHTML = 'Oh what fun';
-}
-console.log(firstParagraph)
+element = document;
+element = document.all;
+element = document.all[200];
+element = document.head;
+element = document.body;
+element = document.domain;
+element = document.URL;
+element = document.characterSet;
+element = document.contentType;
 
-for (let p of firstParagraph) {
-    p.innerHTML = "holy buns";
-}
+// Links
+element = document.links;
+element = document.links[2];
+element = document.links[2].id;
+element = document.links[2].className;
+element = document.links[2].classList;
+
+console.log(element)

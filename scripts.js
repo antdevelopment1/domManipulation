@@ -63,3 +63,25 @@ const learningHeading = document.querySelector('#learn');
 learningHeading.textContent = 'A new heading';
 
 console.log(learningHeading)
+
+const tagline = document.querySelector('.tagline');
+const newText = tagline.textContent.replace('$15', '$12');
+tagline.textContent = newText;
+console.log(tagline)
+
+// Returns the first one only
+let card = document.querySelector('.card');
+console.log(card)
+heading = document.querySelector('h2');
+console.log(heading)
+
+// Nested selectors with Css syntax
+let image = document.querySelector('.card img');
+console.log(image)
+
+// Query Selector using nth-child, first-chil, last-child
+link = document.querySelector('#primary a');
+link = document.querySelector('#primary a:first-child');
+link = document.querySelector('#primary a:last-child');
+link = document.querySelector('#primary a:nth-child(2');
+console.log(link);
